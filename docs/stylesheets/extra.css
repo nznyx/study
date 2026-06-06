@@ -1,0 +1,16 @@
+/* Pure white text in dark (slate) mode */
+[data-md-color-scheme="slate"] {
+  --md-typeset-color: #ffffff;
+  --md-default-fg-color: hsla(0, 0%, 100%, 1);
+  --md-default-fg-color--light: hsla(0, 0%, 100%, 0.8);
+  --md-default-fg-color--lighter: hsla(0, 0%, 100%, 0.5);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4,
+[data-md-color-scheme="slate"] .md-typeset h5,
+[data-md-color-scheme="slate"] .md-typeset h6 {
+  color: #ffffff;
+}
