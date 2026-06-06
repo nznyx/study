@@ -1,6 +1,7 @@
 ls:
   .dir: kebab-case
   .md: kebab-case
+  .jpg: kebab-case
 
 ignore:
   - node_modules
