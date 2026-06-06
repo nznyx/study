@@ -41,14 +41,8 @@ jobs:
       - name: Install Node dependencies
         run: npm ci
 
-      - name: Lint file names
-        run: npx ls-lint
-
-      - name: Lint markdown
-        run: npx markdownlint "docs/**/*.md"
-
-      - name: Build with strict mode
-        run: mkdocs build --strict
+      - name: Lint and build
+        run: make lint-check
 
       - name: Upload site artifact
         if: github.ref == 'refs/heads/main'
