@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "study-notes"
+version = "0.1.0"
+description = "Computer science and math notes with MkDocs"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mkdocs>=1.6",
+    "mkdocs-material>=9.7",
+    "mkdocs-minify-plugin>=0.8"
+]
