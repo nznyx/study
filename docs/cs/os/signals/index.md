@@ -19,6 +19,7 @@ trap -l
 ```
 
 Вывод `trap -l` На современном железе
+
 ```txt
  1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
  6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
