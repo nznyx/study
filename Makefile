@@ -1,4 +1,4 @@
-.PHONY: setup serve build lint
+.PHONY: setup serve build lint lint-check
 
 setup:
 	python3 -m venv venv
@@ -12,6 +12,11 @@ build:
 	. venv/bin/activate && mkdocs build
 
 lint:
-	. venv/bin/activate && mkdocs build --strict
+	[ -d venv ] && . venv/bin/activate; mkdocs build --strict
+	npx ls-lint
+	npx markdownlint --fix "docs/**/*.md"
+
+lint-check:
+	[ -d venv ] && . venv/bin/activate; mkdocs build --strict
 	npx ls-lint
 	npx markdownlint "docs/**/*.md"
