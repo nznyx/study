@@ -1,0 +1,8 @@
+{
+    "name": "study-notes",
+    "private": true,
+    "devDependencies": {
+        "@ls-lint/ls-lint": "^2.2.0",
+        "markdownlint-cli": "^0.42.0"
+    }
+}

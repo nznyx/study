@@ -1,0 +1,15 @@
+ls:
+  .dir: kebab-case
+  .md: kebab-case
+
+ignore:
+  - node_modules
+  - venv
+  - site
+  - .github
+  - .git
+  - study_notes.egg-info
+  - __pycache__
+  - .pytest_cache
+  - README.md
+  - CONTRIBUTING.md
